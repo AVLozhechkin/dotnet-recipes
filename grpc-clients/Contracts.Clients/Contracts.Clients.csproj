@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Contracts\Contracts.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Google.Protobuf" Version="3.30.2" />
+        <PackageReference Include="Grpc.Net.ClientFactory" Version="2.70.0" />
+        <PackageReference Include="Grpc.Tools" Version="2.71.0" />
+        <PackageReference Include="Grpc.Net.Client" Version="2.70.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <Protobuf 
+                Include="../Contracts/Protos/*.service.proto" 
+                GrpcServices="Client" 
+                ProtoRoot="../Contracts/Protos"
+                Access="Internal" />
+    </ItemGroup>
+    
+
+</Project>

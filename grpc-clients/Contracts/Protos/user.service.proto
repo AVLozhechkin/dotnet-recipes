@@ -1,0 +1,10 @@
+﻿syntax = "proto3";
+
+import "user.messages.proto";
+
+package user;
+
+service UserService {
+  // Creates a user and returns its ID
+  rpc Create(CreateUserRequest) returns (CreateUserResponse); 
+}

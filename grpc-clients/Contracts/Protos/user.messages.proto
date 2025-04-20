@@ -1,0 +1,14 @@
+﻿syntax = "proto3";
+
+package user;
+
+// Request to create a user
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+}
+
+// ID of created user
+message CreateUserResponse {
+  int64 id = 1;
+}
