@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.Clients", "grpc-c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.Web", "grpc-clients\Contracts.Web\Contracts.Web.csproj", "{19A63D95-6EC2-4875-BA4D-D59146A28A87}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.ClientExample", "grpc-clinets\Contracts.ClientExample\Contracts.ClientExample.csproj", "{69959490-FA4D-46B6-A395-04A5E40F3610}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts.ClientExample", "grpc-clients\Contracts.ClientExample\Contracts.ClientExample.csproj", "{69959490-FA4D-46B6-A395-04A5E40F3610}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
